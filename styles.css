@@ -1,0 +1,141 @@
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  background: #1d1d1f;
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  color: white;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 44px;
+  background: black;
+  color: white;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+}
+
+img {
+  object-fit: contain;
+}
+
+iframe {
+  width: 90%;
+  height: 320px;
+  object-fit: contain;
+}
+
+#header img {
+  padding: 0px 16px;
+  width: 14px;
+}
+
+#nav-bar a {
+  margin: 0 0px;
+  padding: 0px 8px;
+  text-decoration: none;
+  font-size: 12px;
+
+  color: rgb(179, 179, 179);
+  transition: color 400ms;
+}
+
+#nav-bar a:hover {
+  color: #fff;
+}
+
+.main-content {
+  margin-top: 44px;
+  width: 100%;
+  font-size: 62.5%;
+}
+
+.main-content > .main-section  {
+  margin-top: -80px;
+  padding: 160px 0;
+  width: 100%;
+}
+
+.black {
+  background-color: black;
+}
+
+.grey {
+  background-color: #1d1d1f;
+}
+
+h1 {
+  font-size: 2.75rem;
+  padding-left: 50px;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  z-index: 2;
+}
+
+#Buy {
+  text-align: center;
+}
+
+#Highlights {
+  text-align: left;
+}
+
+#Highlights > div {
+  padding-left: 50px;
+}
+
+.video-container {
+  background-color: black;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1.5em 0em;
+  border-radius: 25px;
+}
+
+#video {
+  margin-bottom: 2.5em;
+}
+
+#View > img {
+  margin: 2em 0;
+  width: 100%;
+}
+
+#View > p {
+  text-align: center;
+}
+
+.ex-action {
+  font-size: 1rem;
+  color: white;
+  border: none;
+  background: rgb(48, 111, 219);
+  margin: 1em 0;
+  padding: 0.6rem 1rem;
+  border-radius: 100px;
+}
+
+.ex-action:hover {
+  background: rgb(50, 116, 216);
+  cursor: pointer;
+}
+
+.detail {
+  color: #86868b;
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+}
