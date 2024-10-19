@@ -31,9 +31,7 @@ img {
 
 iframe {
   width: max(calc(80vw - 20%), 460px);
-  /*max-width: 560px;*/
   height: max(36vw, 259px);
-  /*max-height: 320px;*/
   object-fit: contain;
   padding-bottom: 3vw;
 }
@@ -60,6 +58,7 @@ iframe {
 .main-content {
   width: 100%;
   font-size: 62.5%;
+  text-align: left;
 }
 
 .main-content > .main-section  {
@@ -69,6 +68,11 @@ iframe {
 
 .main-content > .main-section:first-of-type {
   margin-top: 44px;
+}
+
+.main-content > .dummy-section  {
+  padding: 8vw 6vw;
+  width: calc(100% - 12vw);
 }
 
 .black {
@@ -93,12 +97,31 @@ h3 {
   z-index: 2;
 }
 
-#Buy {
+.center {
   text-align: center;
 }
 
-#Highlights {
-  text-align: left;
+p {
+  font-size: max(0.85vw, 12px);
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid #86868b;
+  margin: 4em 0;
+}
+
+#View > img {
+  margin: 2em 0;
+  width: 100%;
+}
+
+#View > p {
+  text-align: center;
+}
+
+#Pre-order > h1 {
+  margin-bottom: max(6vw, 1.5rem);
 }
 
 .video-container {
@@ -109,13 +132,10 @@ h3 {
   border-radius: 25px;
 }
 
-#View > img {
-  margin: 2em 0;
-  width: 100%;
-}
-
-#View > p {
-  text-align: center;
+@media only screen and (max-width: 700px) {
+  .video-container {
+    text-align: center;
+  }
 }
 
 .ex-action {
@@ -133,8 +153,49 @@ h3 {
   cursor: pointer;
 }
 
+.big {
+  border-radius: 12px;
+  padding: 1rem;
+}
+
 .detail {
   color: #86868b;
   font-size: 1rem;
   line-height: 1.4rem;
+}
+
+.small {
+  font-size: 12px;
+  line-height: 1rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+.link {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+input {
+  display: inline;
+  border: 1px solid #86868b;
+  border-radius: 12px;
+  box-sizing: border-box;
+  font-size: 17px;
+  background: #1d1d1f;
+  color: #fff2f4;
+  padding: 1rem;
+  width: max(38vw, 360px);
+  margin: 0 3rem 0.4rem 0;
+}
+
+input:required:focus:invalid {
+  border-color: red;
+  background: #ffcccc;
+  color: #1d1d1f;
+}
+
+input:required:valid {
+  border-color: #86868b;
 }
