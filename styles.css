@@ -4,6 +4,7 @@
   }
 }
 
+/*Set object and text styling*/
 body {
   background: #1d1d1f;
   margin: 0;
@@ -61,6 +62,8 @@ iframe {
   text-align: left;
 }
 
+/*Sub-class styling*/
+
 .main-content > .main-section  {
   padding: 8vw 6vw;
   width: calc(100% - 12vw);
@@ -83,6 +86,7 @@ iframe {
   background-color: #1d1d1f;
 }
 
+/*Styles for different text types*/
 h1 {
   font-size: max(3.5vw, 1.5rem);
   padding-left: 0vw;
@@ -124,6 +128,27 @@ hr {
   margin-bottom: max(6vw, 1.5rem);
 }
 
+.detail {
+  color: #86868b;
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+
+.small {
+  font-size: 12px;
+  line-height: 1rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+.link {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/*Button and containers*/
+
 .video-container {
   background-color: black;
   width: 80vw;
@@ -158,25 +183,7 @@ hr {
   padding: 1rem;
 }
 
-.detail {
-  color: #86868b;
-  font-size: 1rem;
-  line-height: 1.4rem;
-}
-
-.small {
-  font-size: 12px;
-  line-height: 1rem;
-}
-
-li {
-  margin-bottom: 0.5rem;
-}
-
-.link {
-  color: rgba(255, 255, 255, 0.8);
-}
-
+/**Input section styling**/
 input {
   display: inline;
   border: 1px solid #86868b;
