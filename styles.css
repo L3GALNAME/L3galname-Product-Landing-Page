@@ -31,8 +31,8 @@ img {
 }
 
 iframe {
-  width: max(calc(80vw - 20%), 230px);
-  height: max(36vw, 130px);
+  width: max(calc(80vw - 20%), 2px);
+  height: max(36vw, 1px);
   object-fit: contain;
   padding-bottom: 3vw;
 }
