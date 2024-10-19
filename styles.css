@@ -157,12 +157,6 @@ li {
   border-radius: 25px;
 }
 
-@media only screen and (max-width: 700px) {
-  .video-container {
-    text-align: center;
-  }
-}
-
 .ex-action {
   font-size: 1rem;
   color: white;
@@ -205,4 +199,14 @@ input:required:focus:invalid {
 
 input:required:valid {
   border-color: #86868b;
+}
+
+/*Skinny screen adjustments*/
+@media only screen and (max-width: 700px) {
+  .video-container {
+    text-align: center;
+  }
+  input {
+    width: max(38vw, 320px);
+  }
 }
